@@ -12,11 +12,18 @@ code {
     monospace;
 }
 
-/* @font-face {
-  font-family: "IBMbold";
-  src: local("IBM"),
-    url("./assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf") format("truetype");
-} */
+@font-face {
+  font-family: "Fraunces";
+  src: local("Fraunces"),
+    url("./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 
 ul, nav{
 list-style:none;

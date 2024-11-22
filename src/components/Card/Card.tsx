@@ -12,15 +12,15 @@ const Card:React.FC = () => {
         <SC.CardContent>
           <p>perfume</p>
           <h3>Gabrielle Essence Eau De Parfum</h3>
-          <p>
+          <SC.CardContentText>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div>
+          </SC.CardContentText>
+          <SC.Price>
             <p>$149.99</p>
             <p>$169.99</p>
-          </div>
-          <button><CardPic/> Add to Cart</button>
+          </SC.Price>
+          <SC.ButtonCustom><CardPic/> Add to Cart</SC.ButtonCustom>
         </SC.CardContent>
       </SC.CardCustom>
     );

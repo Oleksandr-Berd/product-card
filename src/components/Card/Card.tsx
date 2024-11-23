@@ -2,9 +2,12 @@ import * as SC from "./CardStyled"
 
 import {ReactComponent as CardPic} from "../../assets/images/icon-cart.svg"
 import backPic from "../../assets/images/image-product-mobile.jpg"
+import backPicDesk from "../../assets/images/image-product-desktop.jpg"
 import { toast } from "react-toastify"
+import { useScreenSize } from "../../hooks/useScreenSize"
 
 const Card:React.FC = () => {
+    const {isDesktop} = useScreenSize()
 
 const handleCard = () => {
     toast.success("Added", { theme: "dark" });
@@ -13,7 +16,7 @@ const handleCard = () => {
     return (
       <SC.CardCustom>
         <SC.ImageCon>
-          <img src={backPic} alt="background" />
+          <img src={isDesktop ? backPicDesk : backPic} alt="background" />
         </SC.ImageCon>
         <SC.CardContent>
           <p>perfume</p>

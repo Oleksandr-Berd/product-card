@@ -4,14 +4,34 @@ export const CardCustom = styled.div`
   padding-bottom: 24px;
 
   background-color: #fff;
+
+  @media (min-width: 1280px) {
+    width: 600px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 0;
+  }
 `;
 
 export const ImageCon = styled.div`
   margin-bottom: 24px;
 
+  @media (min-width: 1280px){
+    margin: 0;
+  }
+
   & img {
     width: 343px;
     height: 240px;
+
+    @media (min-width: 1280px) {
+      width: 300px;
+      height: 450px;
+    }
   }
 `;
 
@@ -99,7 +119,17 @@ export const ButtonCustom = styled.button`
 
   border-radius: 8px;
 
-  & > svg{
+  transition: background-color 1s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #1a4032;
+    cursor: pointer;
+    transition: background-color 1s linear;
+  }
+
+  & > svg {
     margin-right: 12px;
   }
 `;

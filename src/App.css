@@ -9,4 +9,11 @@
   text-align: center;
 
   background-color: #f2eae2;
+
+  @media (min-width:1280px){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }

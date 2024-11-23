@@ -70,8 +70,6 @@ export const Price = styled.div`
   }
 
   & > p:last-child {
-
-
     font-family: "Montserrat";
     font-size: 23px;
     line-height: 1.77;
@@ -82,5 +80,26 @@ export const Price = styled.div`
 `;
 
 export const ButtonCustom = styled.button`
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 14px;
+
+  background-color: #3d8168;
+  color: #fff;
+
+  border-radius: 8px;
+
+  & > svg{
+    margin-right: 12px;
+  }
 `;

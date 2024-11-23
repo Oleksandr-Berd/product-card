@@ -2,8 +2,14 @@ import * as SC from "./CardStyled"
 
 import {ReactComponent as CardPic} from "../../assets/images/icon-cart.svg"
 import backPic from "../../assets/images/image-product-mobile.jpg"
+import { toast } from "react-toastify"
 
 const Card:React.FC = () => {
+
+const handleCard = () => {
+    toast.success("Added", { theme: "dark" });
+}
+
     return (
       <SC.CardCustom>
         <SC.ImageCon>
@@ -20,7 +26,7 @@ const Card:React.FC = () => {
             <p>$149.99</p>
             <p>$169.99</p>
           </SC.Price>
-          <SC.ButtonCustom><CardPic/> Add to Cart</SC.ButtonCustom>
+          <SC.ButtonCustom onClick={handleCard}><CardPic/> Add to Cart</SC.ButtonCustom>
         </SC.CardContent>
       </SC.CardCustom>
     );
